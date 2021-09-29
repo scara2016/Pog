@@ -17,13 +17,12 @@ public class Hazard : MonoBehaviour
         
     }
 
-
-  /*  private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider collider)
     {
-        Player player = collider.GetComponent<Player>();
+        Move player = collider.GetComponent<Move>();
         if(player != null)
         {
-            Destroy(player);
+            Destroy(player.gameObject);
         }
-    }*/
+    }
 }
