@@ -5,9 +5,17 @@ using UnityEngine;
 public class ScoreKeeper : MonoBehaviour
 {
     private int score;
+    private UIManager uIManager;
+    public int Score
+    {
+        get
+        {
+            return score;
+        }
+    }
     void Start()
     {
-        
+        uIManager = FindObjectOfType<UIManager>();
     }
 
     // Update is called once per frame
@@ -18,5 +26,6 @@ public class ScoreKeeper : MonoBehaviour
     public void updateScore()
     {
         score++;
+        uIManager.UpdateScoreText(score);
     }
 }
