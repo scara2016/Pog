@@ -20,11 +20,11 @@ public class Move : MonoBehaviour
         
         if (Vertical > 0)
         {
-            transform.Translate(Vector3.up * speed * Time.deltaTime);
+            transform.Translate(Vector3.forward * speed * Time.deltaTime);
         }
         if (Vertical < 0)
         {
-            transform.Translate(Vector3.down * speed * Time.deltaTime);
+            transform.Translate(Vector3.back * speed * Time.deltaTime);
         }
         if (Horizontal > 0)
         {
