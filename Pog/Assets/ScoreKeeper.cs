@@ -5,6 +5,13 @@ using UnityEngine;
 public class ScoreKeeper : MonoBehaviour
 {
     private int score;
+    public void Score
+    {
+        get
+        {
+            return score;
+        }
+    }
     void Start()
     {
         
