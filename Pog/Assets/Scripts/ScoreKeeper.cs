@@ -23,7 +23,7 @@ public class ScoreKeeper : MonoBehaviour
     {
         
     }
-    public void updateScore()
+    public void UpdateScore()
     {
         score++;
         uIManager.UpdateScoreText(score);
