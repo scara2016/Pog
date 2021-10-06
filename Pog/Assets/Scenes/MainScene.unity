@@ -338,7 +338,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5622035738485594990, guid: 51f9d442d1e724cd5913432536b9b4f0, type: 3}
       propertyPath: m_Name
-      value: Player
+      value: Player 1
       objectReference: {fileID: 0}
     - target: {fileID: 6271665019457762960, guid: 51f9d442d1e724cd5913432536b9b4f0, type: 3}
       propertyPath: m_Materials.Array.data[0]
