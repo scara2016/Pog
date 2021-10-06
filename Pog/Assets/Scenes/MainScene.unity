@@ -338,7 +338,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5622035738485594990, guid: 51f9d442d1e724cd5913432536b9b4f0, type: 3}
       propertyPath: m_Name
-      value: Player1
+      value: Player 1
       objectReference: {fileID: 0}
     - target: {fileID: 6271665019457762960, guid: 51f9d442d1e724cd5913432536b9b4f0, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -559,7 +559,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3084163704235225174, guid: aa2c832f4efa248a5a02a8eccf75fa66, type: 3}
       propertyPath: m_Name
-      value: Player2
+      value: Player 2
       objectReference: {fileID: 0}
     - target: {fileID: 3729318181218426276, guid: aa2c832f4efa248a5a02a8eccf75fa66, type: 3}
       propertyPath: m_Materials.Array.data[0]
