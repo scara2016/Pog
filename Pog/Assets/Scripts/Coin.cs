@@ -17,8 +17,20 @@ public class Coin : MonoBehaviour
     
     }
 
-    void OnTriggerEnter(Collider collider)
+    void OnTriggerEnter(Collider c)
     {
+        Destroy(gameObject);
+        if (c.gameObject.CompareTag("Player1"))
+        {
+           scorekeeper.UpdateScore(1);
+        }
+
+        if (c.gameObject.CompareTag("Player2"))
+        {
+           scorekeeper.UpdateScore(2);
+        }
+    }
+
 
         Move player = collider.GetComponent<Move>();
         if (player != null)
