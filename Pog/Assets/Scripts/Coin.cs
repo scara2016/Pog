@@ -30,13 +30,4 @@ public class Coin : MonoBehaviour
            scorekeeper.UpdateScore(2);
         }
     }
-
-
-        Move player = collider.GetComponent<Move>();
-        if (player != null)
-        {
-            Destroy(gameObject);
-            scorekeeper.UpdateScore();
-        }
-    }
 }
