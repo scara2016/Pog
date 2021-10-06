@@ -4,13 +4,21 @@ using UnityEngine;
 
 public class ScoreKeeper : MonoBehaviour
 {
-    private int score;
+    private int scorePlayer1;
+    private int scorePlayer2;
     private UIManager uIManager;
-    public int Score
+    public int ScorePlayer1
     {
         get
         {
-            return score;
+            return scorePlayer1;
+        }
+    }
+    public int ScorePlayer2
+    {
+        get
+        {
+            return scorePlayer2;
         }
     }
     void Start()
@@ -23,9 +31,17 @@ public class ScoreKeeper : MonoBehaviour
     {
         
     }
-    public void UpdateScore()
+    public void UpdateScore(int PlayerNumber)
     {
-        score++;
-        uIManager.UpdateScoreText(score);
+        if (PlayerNumber == 1)
+        {
+            scorePlayer1++;
+            uIManager.UpdateScoreTextPlayer1(scorePlayer1);
+        }
+        if (PlayerNumber == 2)
+        {
+            scorePlayer2++;
+            uIManager.UpdateScoreTextPlayer2(scorePlayer2);
+        }
     }
 }
