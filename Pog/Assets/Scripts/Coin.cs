@@ -19,9 +19,12 @@ public class Coin : MonoBehaviour
 
     void OnTriggerEnter(Collider collider)
     {
-        Destroy(gameObject);
-        scorekeeper.UpdateScore();
+
+        Move player = collider.GetComponent<Move>();
+        if (player != null)
+        {
+            Destroy(gameObject);
+            scorekeeper.UpdateScore();
+        }
     }
-
-
 }
