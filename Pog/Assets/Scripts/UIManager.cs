@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
-    private Text[] scoreTexts;
+    private Text[] scoreTexts = new Text[2];
     private Text scoreTextPlayer1;
     private Text scoreTextPlayer2;
     
