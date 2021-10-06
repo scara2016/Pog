@@ -20,7 +20,6 @@ public class Coin : MonoBehaviour
     void OnTriggerEnter(Collider c)
     {
         Destroy(gameObject);
-        scorekeeper.UpdateScore();
         if (c.gameObject.CompareTag("Player1"))
         {
            scorekeeper.UpdateScore(1);
