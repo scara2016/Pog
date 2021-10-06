@@ -5,11 +5,16 @@ using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
-    private Text ScoreText;
+    private Text[] scoreTexts;
+    private Text scoreTextPlayer1;
+    private Text scoreTextPlayer2;
+    
     // Start is called before the first frame update
     void Start()
     {
-        ScoreText = GetComponentInChildren<Text>();
+        scoreTexts = GetComponents<Text>();
+        scoreTextPlayer1 = scoreTexts[0];
+        scoreTextPlayer2 = scoreTexts[1];
     }
 
     // Update is called once per frame
@@ -17,8 +22,12 @@ public class UIManager : MonoBehaviour
     {
 
     }
-    public void UpdateScoreText(int score)
+    public void UpdateScoreTextPlayer1(int score)
     {
-        ScoreText.text = "Score:- " + score;
+        scoreTextPlayer1.text = "Score:- " + score;
+    }
+    public void UpdateScoreTextPlayer2(int score)
+    {
+        scoreTextPlayer2.text = "Score:- " + score;
     }
 }
