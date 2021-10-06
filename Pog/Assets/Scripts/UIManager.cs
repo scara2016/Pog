@@ -17,11 +17,6 @@ public class UIManager : MonoBehaviour
         scoreTextPlayer2 = scoreTexts[1];
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
     public void UpdateScoreTextPlayer1(int score)
     {
         scoreTextPlayer1.text = "Score:- " + score;
