@@ -5,16 +5,14 @@ using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
-    private Text[] scoreTexts = new Text[2];
-    private Text scoreTextPlayer1;
-    private Text scoreTextPlayer2;
+   
+    public Text scoreTextPlayer1;
+    public Text scoreTextPlayer2;
     
     // Start is called before the first frame update
     void Start()
     {
-        scoreTexts = GetComponents<Text>();
-        scoreTextPlayer1 = scoreTexts[0];
-        scoreTextPlayer2 = scoreTexts[1];
+        
     }
 
     public void UpdateScoreTextPlayer1(int score)
