@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657838, g: 0.49641234, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -659,6 +659,14 @@ PrefabInstance:
     - target: {fileID: 3826494075165048369, guid: 4fc01a97b32262d429e52818d63b8419, type: 3}
       propertyPath: m_Name
       value: UIManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 3855552649673996491, guid: 4fc01a97b32262d429e52818d63b8419, type: 3}
+      propertyPath: m_Text
+      value: Score:-
+      objectReference: {fileID: 0}
+    - target: {fileID: 4481101431576946609, guid: 4fc01a97b32262d429e52818d63b8419, type: 3}
+      propertyPath: m_Text
+      value: Score:-
       objectReference: {fileID: 0}
     - target: {fileID: 6122988449118861877, guid: 4fc01a97b32262d429e52818d63b8419, type: 3}
       propertyPath: scoreTextPlayer1
